@@ -21,10 +21,10 @@ export default function Hero() {
             </div>
             <div className="md:grid grid-cols-12 gap-5  pt-5">
               <div className="col-span-8">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl  font-extrabold">
+                <h1 className="text-3xl md:text-4xl lg:text-6xl  font-extrabold">
                   Hi, Im  Kamrul Hasan <span className='text-[#ff9d42]'>ANIK</span>
                 </h1>
-                <p className="mt-3 md:mt-5 md:text-lg lg:text-2xl font-semibold">
+                <p className="mt-3 md:mt-5 md:text-lg lg:text-3xl font-semibold">
                   <Typewriter words={['MERN Stack Developer', 'Full Stack Developer', 'ReactJs Developer','Web Developer']}
                     loop={0}
                     cursor
