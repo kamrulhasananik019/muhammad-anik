@@ -1,6 +1,7 @@
 import Latest from "@/Components/latest";
 import About from "../Components/about";
 import Hero from "../Components/hero";
+import Projects from "@/Components/project";
 
 
 
@@ -11,6 +12,7 @@ export default function Home() {
    <Hero/>
    <About/>
    <Latest/>
+   <Projects/>
   </div>
   );
 }

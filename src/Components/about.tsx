@@ -13,7 +13,7 @@ import { TbBrandNextjs, TbBrandFirebase } from "react-icons/tb";
 import { SiWebflow, SiExpress, SiMongodb } from "react-icons/si";
 import { BiLogoTailwindCss } from "react-icons/bi";
 
-// Single prop interface: title, logo, count
+
 interface ServiceCardProps {
   title: string;
   logo: React.ReactNode;
