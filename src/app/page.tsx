@@ -2,6 +2,7 @@ import Latest from "@/Components/latest";
 import About from "../Components/about";
 import Hero from "../Components/hero";
 import Projects from "@/Components/project";
+import Contact from "@/Components/contact";
 
 
 
@@ -13,6 +14,7 @@ export default function Home() {
    <About/>
    <Latest/>
    <Projects/>
+   <Contact/>
   </div>
   );
 }
