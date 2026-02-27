@@ -1,20 +1,21 @@
-import Latest from "@/Components/latest";
-import About from "../Components/about";
-import Hero from "../Components/hero";
-import Projects from "@/Components/project";
-import Contact from "@/Components/contact";
-
-
+"use client"
+import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import HeroSection from "@/components/HeroSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import SkillsSection from "@/components/SkillsSection";
+import Image from "next/image";
 
 export default function Home() {
   return (
-  <div  style={{ backgroundImage: 'url("/herobg.webp")' }}
-  className="  text-white relative z-0  bg-fixed" >
-   <Hero/>
-   <About/>
-   <Latest/>
-   <Projects/>
-   <Contact/>
-  </div>
+  <>
+  <HeroSection/> 
+  <AboutSection/>
+  <SkillsSection/>
+  <ExperienceSection/>
+  <ProjectsSection />
+  <ContactSection/>
+  </>
   );
 }
