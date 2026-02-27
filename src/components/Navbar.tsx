@@ -37,7 +37,7 @@ const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="h-[72px] flex items-center justify-between px-6 md:px-12">
+        <div className="h-[72px] container mx-auto flex items-center justify-between px-6 md:px-12">
           {/* Logo */}
           <a href="#" className="font-bold text-xl neon-text font-mono">
             {"<Anik/>"}

@@ -144,53 +144,56 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <motion.div
-            className="flex gap-4 justify-center lg:justify-start flex-wrap"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2 }}
           >
-            <a
-              href="#projects"
-              className="group relative px-8 py-3 font-semibold text-primary-foreground rounded-lg overflow-hidden"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_100%] animate-shimmer" />
-              <span className="relative z-10">View Projects</span>
-            </a>
+            <div className="flex gap-4 justify-center lg:justify-start flex-wrap">
+              <a
+                href="#projects"
+                className="group relative px-8 py-3 font-semibold text-primary-foreground rounded-lg overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_100%] animate-shimmer" />
+                <span className="relative z-10">View Projects</span>
+              </a>
 
-            <a
-              href="#contact"
-              className="px-8 py-3 font-semibold text-foreground gradient-border rounded-lg hover:neon-glow-box"
-            >
-              Get In Touch
-            </a>
+              <a
+                href="#contact"
+                className="px-8 py-3 font-semibold text-foreground gradient-border rounded-lg hover:neon-glow-box"
+              >
+                Get In Touch
+              </a>
 
-            <a
+              {/* <a
               href="#"
               className="px-6 py-3 font-semibold text-muted-foreground flex items-center gap-2 hover:text-primary transition-colors"
             >
               <Download className="w-4 h-4" />
               Resume
-            </a>
+            </a> */}
+            </div>
+
+            <div className="flex gap-4 mt-6 justify-center lg:justify-start">
+              {socials.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={item.label}
+                    className="p-3 rounded-full border border-primary/30 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all hover:neon-glow-box"
+                  >
+                    <Icon className="w-5 h-5" />
+                  </a>
+                );
+              })}
+            </div>
           </motion.div>
 
           {/* Social icons under buttons */}
-          <div className="flex gap-4 mt-6 justify-center lg:justify-start">
-            {socials.map((item) => {
-              const Icon = item.icon;
-              return (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={item.label}
-                  className="p-3 rounded-full border border-primary/30 text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all hover:neon-glow-box"
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              );
-            })}
-          </div>
+
         </div>
 
         {/* Profile image */}
