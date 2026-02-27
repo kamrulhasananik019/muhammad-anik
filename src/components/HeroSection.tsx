@@ -222,7 +222,7 @@ const HeroSection = () => {
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden profile-glow border-2 border-primary/30 ">
             <img
               src="https://lh3.googleusercontent.com/a/ACg8ocKXUiv8eOGDSjJgyhJnCvJ0dHI-IOKMRcLJNWl8-sqTy2xm8gdn=s288-c-no"
-              alt="Profile"
+              alt="Muhammad Anik Full-Stack Web Developer and Blockchain Enthusiast"
               className="w-full h-full object-cover"
             />
           </div>
