@@ -26,7 +26,10 @@ export const metadata: Metadata = {
   description:
     "Muhammad Anik is a Full-Stack Web Developer specializing in React, Next.js, MERN stack, and modern web technologies. Focused on performance, SEO, security, blockchain, and scalable web applications.",
 
+  applicationName: "Muhammad Anik Portfolio",
+
   keywords: [
+    "Muhammad Anik",
     "Full Stack Developer",
     "Web Developer",
     "MERN Stack Developer",
@@ -37,10 +40,10 @@ export const metadata: Metadata = {
     "Blockchain Developer",
     "Network Engineer",
     "Cybersecurity",
-    "Portfolio Website",
+    "Developer Portfolio",
   ],
 
-  authors: [{ name: "Muhammad Anik" }],
+  authors: [{ name: "Muhammad Anik", url: "https://www.muhammadanik.online" }],
   creator: "Muhammad Anik",
   publisher: "Muhammad Anik",
 
@@ -56,12 +59,18 @@ export const metadata: Metadata = {
     },
   },
 
+  alternates: {
+    canonical: "https://www.muhammadanik.online",
+  },
+
   openGraph: {
     title: "Muhammad Anik | Full-Stack Web Developer",
     description:
       "Official portfolio of Muhammad Anik, a Full-Stack Web Developer experienced in React, Next.js, MERN stack, Blockchain, and Networking.",
     url: "https://www.muhammadanik.online",
     siteName: "Muhammad Anik Portfolio",
+    locale: "en_US",
+    type: "website",
     images: [
       {
         url: "https://lh3.googleusercontent.com/a/ACg8ocKXUiv8eOGDSjJgyhJnCvJ0dHI-IOKMRcLJNWl8-sqTy2xm8gdn=s288-c-no",
@@ -70,8 +79,6 @@ export const metadata: Metadata = {
         alt: "Muhammad Anik Full-Stack Web Developer",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
 
   twitter: {
@@ -82,21 +89,24 @@ export const metadata: Metadata = {
     images: [
       "https://lh3.googleusercontent.com/a/ACg8ocKXUiv8eOGDSjJgyhJnCvJ0dHI-IOKMRcLJNWl8-sqTy2xm8gdn=s288-c-no",
     ],
+    creator: "@AnikKamrulhasan",
   },
 
-  alternates: {
-    canonical: "https://www.muhammadanik.online",
-    languages: {
-      "en-US": "https://www.muhammadanik.online",
-    },
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
+
+  themeColor: "#0f172a",
+  category: "technology",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
