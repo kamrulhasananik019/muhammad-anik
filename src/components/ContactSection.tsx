@@ -3,12 +3,12 @@
 import { motion } from "framer-motion";
 import {
   Mail,
-  MapPin,
   Github,
   Linkedin,
   Twitter,
   MessageCircle,
   User,
+  Phone,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -42,7 +42,8 @@ const ContactSection = () => {
     message: "",
   });
 
-  const isDisabled = !formData.name || !formData.email || !formData.message;
+  const isDisabled =
+    !formData.name || !formData.email || !formData.message;
 
   const handleEmailSend = () => {
     if (isDisabled) return;
@@ -64,7 +65,10 @@ const ContactSection = () => {
       `Hello Anik 👋\n\nName: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
 
-    window.open(`https://wa.me/8801648820191?text=${text}`, "_blank");
+    window.open(
+      `https://wa.me/8801648820191?text=${text}`,
+      "_blank"
+    );
   };
 
   return (
@@ -96,19 +100,31 @@ const ContactSection = () => {
             className="space-y-6"
           >
             <p className="text-muted-foreground text-lg leading-relaxed">
-               Have a project in mind? Let’s build something amazing together.
+              Have a project in mind? Let’s build something amazing together.
               I’m always open to new opportunities and collaborations.
             </p>
 
             <div className="space-y-4">
+              {/* Email clickable */}
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>kamrulhasananik019@gmail.com</span>
+                <a
+                  href="mailto:kamrulhasananik019@gmail.com"
+                  className="hover:text-primary transition-colors"
+                >
+                  kamrulhasananik019@gmail.com
+                </a>
               </div>
 
+              {/* Phone clickable */}
               <div className="flex items-center gap-3 text-muted-foreground">
-                <MapPin className="w-4 h-4 text-primary" />
-                <span>Available Worldwide</span>
+                <Phone className="w-4 h-4 text-primary" />
+                <a
+                  href="tel:+8801648820191"
+                  className="hover:text-primary transition-colors"
+                >
+                  +880 1648 820191
+                </a>
               </div>
             </div>
 
@@ -137,7 +153,7 @@ const ContactSection = () => {
           >
             {/* Name */}
             <div className="relative">
-              <User className="absolute left-4 top-4 w-4 h-4 text-muted-foreground" />
+              <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground z-10 pointer-events-none" />
               <input
                 type="text"
                 placeholder="Your name"
@@ -146,14 +162,14 @@ const ContactSection = () => {
                   setFormData({ ...formData, name: e.target.value })
                 }
                 className="w-full pl-11 pr-4 py-4 rounded-xl bg-transparent gradient-border
-                           focus:outline-none focus:ring-1 focus:ring-primary
-                           placeholder:text-muted-foreground"
+                focus:outline-none focus:ring-1 focus:ring-primary
+                placeholder:text-muted-foreground"
               />
             </div>
 
             {/* Email */}
             <div className="relative">
-              <Mail className="absolute left-4 top-4 w-4 h-4 text-muted-foreground" />
+              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground z-10 pointer-events-none" />
               <input
                 type="email"
                 placeholder="Your email"
@@ -162,8 +178,8 @@ const ContactSection = () => {
                   setFormData({ ...formData, email: e.target.value })
                 }
                 className="w-full pl-11 pr-4 py-4 rounded-xl bg-transparent gradient-border
-                           focus:outline-none focus:ring-1 focus:ring-primary
-                           placeholder:text-muted-foreground"
+                focus:outline-none focus:ring-1 focus:ring-primary
+                placeholder:text-muted-foreground"
               />
             </div>
 
@@ -176,8 +192,8 @@ const ContactSection = () => {
                 setFormData({ ...formData, message: e.target.value })
               }
               className="w-full px-4 py-4 rounded-xl bg-transparent gradient-border
-                         resize-none focus:outline-none focus:ring-1 focus:ring-primary
-                         placeholder:text-muted-foreground"
+              resize-none focus:outline-none focus:ring-1 focus:ring-primary
+              placeholder:text-muted-foreground"
             />
 
             {/* Buttons */}
