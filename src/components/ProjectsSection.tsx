@@ -11,7 +11,7 @@ const projects = [
     description:
       "A high-performance landing website built with Next.js and Tailwind CSS, featuring smooth animations and a clean, modern UI.",
     tech: ["NextJS", "JavaScript", "Tailwind CSS", "Framer Motion"],
-    image: "https://i.ibb.co.com/wZ12Sxg2/zeros.webp",
+    image: "https://res.cloudinary.com/dmret0drj/image/upload/v1772323028/portfolio/zeros_aitngg.webp",
     featured: true,
     liveLink: "https://zero-drab-theta.vercel.app/",
   },
@@ -20,7 +20,7 @@ const projects = [
     description:
       "An organic food e-commerce website built with WordPress and WooCommerce, designed for online sales, easy product management, and a smooth shopping experience.",
     tech: ["WordPress", "CSS", "WooCommerce", "Elementor"],
-    image: "https://i.ibb.co.com/hRSrWsKz/zahra.webp",
+    image: "https://res.cloudinary.com/dmret0drj/image/upload/v1772323029/portfolio/zahra_dw5uku.webp",
     featured: true,
     liveLink: "https://zahraalhayat.com/",
   },
@@ -29,7 +29,7 @@ const projects = [
     description:
       "A modern business website built with Webflow and JavaScript, focused on clean design, fast performance, and strong brand presence.",
     tech: ["WebFlow", "JavaScript"],
-    image: "https://i.ibb.co.com/23ZYZ1yk/upturn.webp",
+    image: "https://res.cloudinary.com/dmret0drj/image/upload/v1772323029/portfolio/upturn_rxma4o.webp",
     featured: true,
     liveLink: "https://www.upturn.com.bd",
   },
@@ -38,7 +38,7 @@ const projects = [
     description:
       "A corporate website built with Next.js and Tailwind CSS, focused on performance, clean layout, and showcasing a European textile brand.",
     tech: ["NextJS", "Tailwind CSS", "JavaScript"],
-    image: "https://i.ibb.co.com/gYNwDBF/ksk.webp",
+    image: "https://res.cloudinary.com/dmret0drj/image/upload/v1772323029/portfolio/ksk_ippyid.webp",
     featured: true,
     liveLink: "https://www.ksktextile.com",
   },
